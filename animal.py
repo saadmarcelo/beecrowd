@@ -30,6 +30,15 @@ r1 = str(input().lower())
 r2 = str(input().lower())
 r3 = str(input().lower())
 
-tipo = {'vertebrado':{'ave': {'carnivoro':'aguia', 'onivoro': 'pomba'}, 'mamifero': {'onivoro': 'homem', 'herbivoro': 'vaca'}}, 'invertebrado': {'inseto': {'hematofago': 'pulga', 'herbivoro': 'lagarta'}, 'anelideo': {'hematofago': 'sanguessuga', 'onivoro': 'minhoca'}}} 
+tipo = {
+    'vertebrado':{
+        'ave': {'carnivoro':'aguia', 'onivoro': 'pomba'},
+        'mamifero': {'onivoro': 'homem', 'herbivoro': 'vaca'}
+        },
+    'invertebrado': {
+        'inseto': {'hematofago': 'pulga', 'herbivoro': 'lagarta'},
+        'anelideo': {'hematofago': 'sanguessuga', 'onivoro': 'minhoca'}
+            }
+        }
 print(tipo[r1][r2][r3])
 
