@@ -54,12 +54,16 @@ t2 = timedelta(days=day2, hours=hora_final, minutes=min_final, seconds=seg_final
 
 t3 = t2 - t1
 
-print(t3.days)
-print(t3.seconds)
+hora = t3.seconds // 3600
+seconds = t3.seconds % 3600
+minutes = seconds //60
 
+seconds = seconds % 60
 
-
-
+print("%d dia(s)"% t3.days)
+print("%d hora(s)" % hora)
+print("%s minuto(s)" % minutes)
+print("%s segundo(s)" % seconds)
 
 # t4 = str(t3)
 
@@ -72,8 +76,8 @@ print(t3.seconds)
 # r1 = dia.split()
 # r2 = time.split(':')
 
-print("%s dia(s)"% t3.days)
-print("%s hora(s)" % r2[0])
-print("%s minuto(s)" % r2[1])
-print("%s segundo(s)" % r2[2])
+# print("%s dia(s)"% t3.days)
+# print("%s hora(s)" % r2[0])
+# print("%s minuto(s)" % r2[1])
+# print("%s segundo(s)" % r2[2])
 
