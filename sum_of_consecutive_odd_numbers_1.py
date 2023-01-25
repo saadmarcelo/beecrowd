@@ -21,21 +21,14 @@ Sample Input	Sample Output
                 0
 '''
 
-n = int(input())
-k = int(input())
+X = int(input())
+Y = int(input())
+start = min(X,Y)+1
+end = max(X,Y)
+if start % 2 == 0:
+    start += 1
 
-count = 0
-
-if n > k:
-    for c in range(k,n):
-        if c%2 !=0:
-            count += c
-elif n < k:
-    for c in range(n,k):
-        if c%2 !=0:
-            count += c
-
-else:
-    count = 0
-
-print(count)
+sum = 0
+for i in range(start, end, 2):
+    sum += i
+print(sum)

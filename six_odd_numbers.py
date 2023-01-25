@@ -21,10 +21,14 @@ Input Sample	Output Sample
 '''
 
 n = int(input())
-
+soma = 0
 contador = 6
+lista = []
 while contador>0:
     if n %2 !=0:
         contador -= 1
         print(n)
+        lista.append(n)
     n += 1
+
+print(lista)
