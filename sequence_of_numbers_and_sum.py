@@ -32,4 +32,4 @@ while X>0 and Y>0:
             sum += i
             lista.append(i)
 
-        print("%s Sum=%d" % (''.join(lista),sum))
+        print(lista, "Sum=%d" % sum)
