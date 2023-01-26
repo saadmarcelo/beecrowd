@@ -16,10 +16,15 @@ Input Sample	Output Sample
 11.0            media = 6.75
 10.0
 '''
-
-nota = float(input())
 lista =[]
+count = 0
 
-if 0<=nota<=10:
-    lista.append(nota)
-    
+while count < 2:
+    nota = float(input())
+    if nota>10 or nota<0:
+        print("nota invalida")
+    else:
+        lista.append(nota)
+        count +=1
+media = (lista[0]+lista[1])/2
+print("media = %.2f" % media)
