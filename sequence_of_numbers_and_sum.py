@@ -23,7 +23,7 @@ while X>0 and Y>0:
     X,Y= map(int,input().split())
     start = min(X,Y)
     end = max(X,Y)
-    if X==0 or Y==0:
+    if X<=0 or Y<=0:
         break
     else:
         sum = 0
@@ -32,4 +32,5 @@ while X>0 and Y>0:
             sum += i
             lista.append(i)
 
-        print(lista, "Sum=%d" % sum)
+        print(*lista, sep=' ', end=' ')
+        print( "Sum=%d" % sum)
