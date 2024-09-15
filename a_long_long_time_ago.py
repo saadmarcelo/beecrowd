@@ -1,4 +1,4 @@
-''''
+"""'
 Raul Seixas sang that he was born 10 thousand years ago and there was nothing in this world that he cannot know too much. The Mamomas Assassinas band sang that more than 10 thousand years "have gone by and passed" [sic] since they have failed at 5th grade. So many past events and professor MC was curious about what year each of these have happened.
 
 You must write a program that, given a series of how many years have passed, show, for each number, in what year the event had happened. Remember that you must indicate if it had happened BC (Before Christ) or AD (Anno Domini). Use the portuguese A.C. for BC and D.C. for AD according to the output sample.
@@ -20,15 +20,16 @@ Input Sample	Output Sample
                 2000 D.C.
                 1 A.C.
 
-'''
+"""
 
 N = int(input())
 for i in range(N):
     year = int(input())
     calculate_year = year - 2015
-    if(calculate_year < 0):
-        print('{0} D.C.'.format(-calculate_year))
-    elif(calculate_year==0):
-        print('1 A.C.')
+    if calculate_year < 0:
+        print("{0} D.C.".format(-calculate_year))
+    elif calculate_year == 0:
+        print("1 A.C.")
     else:
-        print('{0} A.C.'.format(calculate_year+1))
+        print("{0} A.C.".format(calculate_year + 1))
+
