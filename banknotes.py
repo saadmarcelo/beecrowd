@@ -39,7 +39,6 @@ Input Sample	Output Sample
                 1 nota(s) de R$ 1,00
 
 '''
-
 saque = int(input())
 nota_100 = 0
 nota_50 = 0
